@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello world</p>
+    <script>
+        const p=document.querySelector("P")
+        const h1=document.createElement("h1")
+        h1.textContent="heading"
+        p.after(h1)//adding node after a specific element
+        const h2=document.createElement("h2")
+        h2.textContent="heading2"
+        p.after(h1,h2) //Adding multiple nodes after specific element
+    </script>
+</body>
+</html>

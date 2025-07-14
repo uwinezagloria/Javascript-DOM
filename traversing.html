@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+<p class="greeting">hello</p>
+<p class="place">world</p>
+<p>uwineza</p>
+<p>gloria</p>
+</div>
+<script>
+    //getting parent node
+let node=document.querySelector(".greeting")
+let parent=node.parentNode
+console.log(parent)
+console.log(document.parentNode)//null
+//getting next sibling
+console.log(node.nextElementSibling);
+//getting previous sibling
+console.log(document.querySelector(".place").previousElementSibling)
+console.log(parent.children) //RETURN HTML COLLECTION OF ALL CHILDREN
+//getting all siblings
+var siblings=[]
+for(let sibling of parent.children){
+
+    if(sibling===(document.querySelector(".place"))){
+        continue;
+    }
+    siblings.push(sibling.outerHTML)
+
+}
+console.log(siblings)
+//getting first child
+console.log(parent.firstChild)
+console.log(parent.firstElementChild)
+//getting last child
+console.log(parent.lastChild)
+console.log(parent.lastElementChild)
+//getting all children
+console.log(parent.childNodes)
+console.log(node.children)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const element=document.createElement("ul")
+       var fragment=new DocumentFragment()
+       function listing(items){
+   const list=document.createElement("li")
+   list.textContent=items
+fragment.appendChild(list)
+       }
+       listing("biscuits")
+       listing("cookies")
+       element.appendChild(fragment)
+        console.log(document.body.appendChild(element))
+    </script>
+</body>
+</html>
