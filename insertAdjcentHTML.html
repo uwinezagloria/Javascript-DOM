@@ -12,7 +12,10 @@
     <script>
   const parent=document.querySelector("ul")
 
-  parent.insertAdjacentHTML("afterBegin","orange")
+  parent.insertAdjacentHTML("afterBegin","<li>orange</li>")
+   parent.insertAdjacentHTML("beforeBegin","<h1>list ofr fruits</h1>")
+     parent.insertAdjacentHTML("beforeend","<li>apple</li>")
+       parent.insertAdjacentHTML("afterend","<h2>the end</h2>")
   console.log(document.querySelector("body").innerHTML)
     </script>
   

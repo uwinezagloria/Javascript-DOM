@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="firstName" placeholder="enter your first name" >
+   <button>Send</button>
+    <script>
+        //getting all attributes of an element
+        const input=document.querySelector("#firstName")
+        console.log(input.attributes)
+        //setting attribute
+        const button=document.querySelector("button")
+       console.log(button.setAttribute("class","submit-button")) 
+        console.log(button)
+        input.setAttribute("disabled","")
+        console.log(input)
+        console.log(input.getAttribute("type"))
+        console.log(button.getAttribute("id"))
+        //removing attribute
+        console.log(input.removeAttribute("Placeholder"))
+        console.log(input)
+        //has attribute
+        console.log(input.hasAttribute("id"))
+
+    </script>
+</body>
+</html>
