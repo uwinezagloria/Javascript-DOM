@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    const element=document.createElement("h1")
+    element.className="heading"
+    element.className+=" first"
+    console.log(element.classList)
+    for(let classes of element.classList){
+        console.log(classes)
+    } 
+    //classList.add()
+    element.classList.add("info")
+    console.log(element)
+console.log(element.classList.add("heading","first"))
+console.log(element)
+//classList.remove()
+console.log(element.classList.remove("heading"))
+console.log(element.classList.replace("info","information"))
+console.log(element.classList.contains("gogo"))
+console.log(element.classList.toggle("gogo"))
+console.log(element.classList.toggle("gogo"))
+console.log(element)
+  </script>
+</body>
+</html>
