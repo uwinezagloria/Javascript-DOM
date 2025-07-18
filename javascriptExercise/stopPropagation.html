@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopPropagation event property</title>
+</head>
+<body>
+   <script>
+const parent=document.createElement("div");
+const element1=document.createElement("button");
+element1.textContent="first button"
+parent.appendChild(element1)
+const element2=document.createElement("button");
+element2.textContent="second button"
+parent.appendChild(element2)
+document.body.appendChild(parent)
+parent.style.cssText="padding: 20px; background-color: lightblue";
+element2.addEventListener("click",(event)=>{
+    event.stopPropagation()
+    alert("second button is clicked")
+})
+parent.addEventListener("click",(event)=>{
+    alert("parent is clicked")
+})
+
+   </script> 
+</body>
+</html>
