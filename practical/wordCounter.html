@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea></textarea>
+    <p> </p>
+    <script>
+        var textarea=document.querySelector("textarea")
+        var p=document.querySelector("p")
+        textarea.addEventListener("input",()=>{
+           
+          const words=textarea.value.trim().split(" ").length
+p.textContent= textarea.value===" "?"words are 0": `words are ${words}`
+                 
+ 
+ var character=textarea.value
+       
+        p.textContent+=` characters are ${character.length}`
+        })
+       
+    </script>
+</body>
+</html>

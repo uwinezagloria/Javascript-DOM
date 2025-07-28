@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling Page Load Event</title>
+</head>
+<body onload="console.log('hello my people!') ">
+    
+    <img src="faith-is-trust.jpg">
+    <script>
+        window.addEventListener("load",()=>{
+            alert("page load event: page has fully loaded")
+        })
+        const img=document.querySelector("img")
+        window.onload=()=>{
+            console.log(img.getAttribute("src"))
+        }
+    </script>
+</body>
+</html>

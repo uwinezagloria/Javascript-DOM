@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM level 2 event handler</title>
+</head>
+<body>
+    <script>
+const element=document.createElement("button")
+element.textContent="greeting"
+document.body.appendChild(element)
+element.addEventListener("click",()=>{
+    alert("Hello  Fam!!")
+})
+element.removeEventListener("click",function(){
+    alert("event was removed")
+}) //removing event listener we  added
+    </script>
+</body>
+</html>

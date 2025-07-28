@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+    <img src="./faith-is-trust.jpg">
+    <script>
+    console.log(document.readyState)
+    window.addEventListener("load",()=>{
+        console.log(document.readyState)
+    })
+    document.addEventListener("DOMContentLoaded",()=>{
+        console.log(document.readyState)
+    })
+    </script>
+</body>
+</html>

@@ -14,6 +14,9 @@ body {
 #products article {
   padding: 1em;
   text-align: center;
+  background-color: #ccc;
+}
+#products .sale{
   background-color: #ffddd2;
 }
 
